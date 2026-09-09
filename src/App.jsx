@@ -3,7 +3,7 @@ import Card from './components/card.jsx'
 function App() {
   const jobs = [
   {
-    id: 1,
+    
     company: "Amazon",
     logo: "https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg",
     posted: "5 days ago",
@@ -14,7 +14,7 @@ function App() {
     location: "Mumbai, India"
   },
   {
-    id: 2,
+    
     company: "Google",
     logo: "https://static.vecteezy.com/system/resources/previews/037/136/968/non_2x/google-search-icon-eps-free-vector.jpg",
     posted: "2 days ago",
@@ -25,7 +25,7 @@ function App() {
     location: "Bangalore, India"
   },
   {
-    id: 3,
+    
     company: "Microsoft",
     logo: "https://static.vecteezy.com/system/resources/previews/028/339/965/original/microsoft-icon-logo-symbol-free-png.png",
     posted: "1 day ago",
@@ -36,7 +36,7 @@ function App() {
     location: "Hyderabad, India"
   },
   {
-    id: 4,
+    
     company: "Apple",
     logo: "https://logodix.com/logo/1206168.png",
     posted: "3 days ago",
@@ -47,7 +47,7 @@ function App() {
     location: "Bangalore, India"
   },
   {
-    id: 5,
+    
     company: "Meta",
     logo: "https://pngimg.com/uploads/meta/meta_PNG12.png",
     posted: "4 days ago",
@@ -58,7 +58,7 @@ function App() {
     location: "Mumbai, India"
   },
   {
-    id: 6,
+    
     company: "Netflix",
     logo: "https://static.vecteezy.com/system/resources/previews/020/336/373/original/netflix-logo-netflix-icon-free-free-vector.jpg",
     posted: "6 days ago",
@@ -69,7 +69,7 @@ function App() {
     location: "Delhi, India"
   },
   {
-    id: 7,
+    
     company: "Adobe",
     logo: "https://i.pinimg.com/736x/f6/0f/b8/f60fb8452db6165d7771316043be598d.jpg",
     posted: "2 days ago",
@@ -80,7 +80,7 @@ function App() {
     location: "Pune, India"
   },
   {
-    id: 8,
+    
     company: "Spotify",
     logo: "https://static.vecteezy.com/system/resources/previews/006/642/199/original/spotify-icon-spotify-logo-spotify-symbol-logo-set-free-vector.jpg",
     posted: "1 week ago",
@@ -91,7 +91,7 @@ function App() {
     location: "Bangalore, India"
   },
   {
-    id: 9,
+
     company: "Flipkart",
     logo: "https://th.bing.com/th/id/OIP.OQrbMsmN86RrB-hXq7AfSQHaHY?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
     posted: "3 days ago",
@@ -102,7 +102,7 @@ function App() {
     location: "Bangalore, India"
   },
   {
-    id: 10,
+  
     company: "TCS",
     logo: "https://brandlogos.net/wp-content/uploads/2022/04/tata_consultancy_services-logo-brandlogos.net_.png",
     posted: "5 days ago",
@@ -116,18 +116,19 @@ function App() {
   return (
     <div className='parent'>
 
-     {jobs.map((e) => (
-  <Card
-    key={e.id}
-    company={e.company}
-    logo={e.logo}
-    posted={e.posted}
-    title={e.title}
-    type={e.type}
-    level={e.level}
-    salary={e.salary}
-    location={e.location}
-  />
+ {jobs.map((e) => (
+  <div key={e.id}>
+    <Card
+      company={e.company}
+      logo={e.logo}
+      posted={e.posted}
+      title={e.title}
+      type={e.type}
+      level={e.level}
+      salary={e.salary}
+      location={e.location}
+    />
+  </div>
 ))}
        
     </div>
